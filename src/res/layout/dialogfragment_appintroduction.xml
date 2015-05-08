@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right"
+        android:background="@drawable/close_x"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="臺南福利通"
+        android:textColor="#ff066ab0"
+        android:textSize="26sp" />
+    
+    <TextView
+        android:id="@+id/tvAppIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="\t\t臺南市政府為推動開放政府之資料開放政策，整合本府各局處開放資料於單一入口網站，供市民瀏覽及程式開發者加值應用。\n\t\t臺南福利通即為採用政府開放資料開發之示範APP。以健康便利為訴求，提供使用者快速尋找相關醫療、照護 哺餵室及公廁等服務據點，提升臺南市親切貼心的形象。"
+        android:textSize="20sp" />
+
+</LinearLayout>

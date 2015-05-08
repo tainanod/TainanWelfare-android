@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ef5579"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnAppInfomation"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="left|top"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_circlebg"
+        android:text="i"
+        android:textColor="#ffffff"
+        android:textSize="17.5sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/IVLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/mainlogo" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IVLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mainbtnbk"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/BTNMedTempMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_med" />
+
+            <Button
+                android:id="@+id/BTNSweetTempMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/BTNMedTempMap"
+                android:background="@drawable/selector_sweet" />
+
+            <Button
+                android:id="@+id/BTNNewTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BTNSweetTempMap"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/BTNCareTempMap"
+                android:background="@drawable/selector_news" />
+
+            <Button
+                android:id="@+id/BTNCareTempMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BTNMedTempMap"
+                android:background="@drawable/selector_care" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

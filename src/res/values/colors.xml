@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="focused">#DC506E</drawable>
+    <drawable name="selected">#DC506E</drawable>
+    <drawable name="Temp_Bg">#80ffffff</drawable>
+    <drawable name="Temp_TransparentBg">#ffffffff</drawable>
+</resources>

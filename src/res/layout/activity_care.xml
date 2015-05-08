@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbox"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ETSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.9"
+            android:background="#00000000"
+            android:hint="@string/search"
+            android:textColorHint="#FEC4D5"
+            android:textSize="25sp"
+            android:textColor="#FEC4D5"
+           	android:focusable="false"
+    		android:imeOptions="flagNoExtractUi"
+    		android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/delete" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llOptionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+    </LinearLayout>
+
+</LinearLayout>
